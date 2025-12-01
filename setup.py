@@ -11,7 +11,7 @@ setup(
     description="Proyecto del modulo 1: Programación avanzada en python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tu_usuario/traficFines",
+    url="https://github.com/JoanV15/ProyectoT1/",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -27,4 +27,5 @@ setup(
         "beautifulsoup4",
         "folium"
     ],
+
 )
