@@ -11,14 +11,16 @@ Ejecuta estos comandos en tu terminal desde la raíz del proyecto:
    pip install wheel
    
 2. **Genera el ejecutable (.whl):**
+   ```bash
    python setup.py sdist bdist_wheel
 
-3. **Instala el paquete:**
+4. **Instala el paquete:**
+    ```bash
    pip install dist/traficFines-0.1.0-py3-none-any.whl
 
 ## Uso y Funciones
   Importa la clase principal y utiliza sus métodos para analizar los datos:
-  
+  ```python
   from traficFines.madrid_fines import MadridFines
   
   app = MadridFines()
@@ -30,4 +32,5 @@ Ejecuta estos comandos en tu terminal desde la raíz del proyecto:
   app.fines_calification(): Devuelve un DataFrame con el recuento de multas agrupadas por calificación (LEVE, GRAVE, MUY GRAVE).
   
   app.total_payment(): Devuelve un DataFrame con el resumen financiero. Calcula la recaudación máxima posible y la mínima estimada (aplicando descuentos por pronto pago).
+
 
